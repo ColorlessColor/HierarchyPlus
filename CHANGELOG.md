@@ -1,3 +1,7 @@
+(v1.3.2)
+--------
+- [Change] Always Show Icons default on.
+
 (v1.3.1)
 --------
 - [Fix] Fix custom icons not loaded when open project.
