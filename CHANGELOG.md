@@ -1,3 +1,7 @@
+(v1.3.1)
+--------
+- [Fix] Fix custom icons not loaded when open project.
+
 (v1.3.0)
 --------
 - [Feature] Added labels for GameObject Tag & Layer. Customizable in settings.
