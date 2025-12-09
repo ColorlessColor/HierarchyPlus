@@ -666,6 +666,7 @@ namespace DreadScripts.HierarchyPlus
         
         private static Rect DrawIcon(GUIContent content, Rect rect, bool faded, bool withBackground)
         {
+			if (content == null) content = new GUIContent();
 	        using (new ColoredScope(ColoredScope.ColoringType.All, faded, settings.iconFadedTintColor, settings.iconTintColor))
 	        {
 		        if (withBackground) EditorGUI.DrawRect(rect, settings.iconBackgroundColor);
