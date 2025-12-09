@@ -1,3 +1,7 @@
+(v1.3.3)
+--------
+- [Fix] If the GUI is drawn before initializing the icon, then draw a placeholder.
+
 (v1.3.2)
 --------
 - [Change] Always Show Icons default on.
