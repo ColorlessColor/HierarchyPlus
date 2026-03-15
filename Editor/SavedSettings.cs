@@ -467,9 +467,10 @@ namespace DreadScripts.HierarchyPlus
 			displayDefaultLayerLabel = new SavedBool(false);
 
 		[SerializeField] internal SavedFloat
-			guiXOffset = new SavedFloat(0),
-			tagLabelWidth = new SavedFloat(75),
-			layerLabelWidth = new SavedFloat(75);
+			guiXOffset = new SavedFloat(0.0f),
+			tagLabelWidth = new SavedFloat(75.0f),
+			layerLabelWidth = new SavedFloat(75.0f),
+			guideLinesWeight = new SavedFloat(1.0f);
 
 		#endregion
 

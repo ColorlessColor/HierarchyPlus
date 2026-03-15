@@ -153,6 +153,7 @@ namespace DreadScripts.HierarchyPlus
 						settings.alwaysShowIcons.DrawField("Always Render Icons");
 						settings.linkCursorOnHover.DrawField("Link Cursor On Hover");
 						settings.guiXOffset.value = EditorGUILayout.FloatField("Icons X Offset", settings.guiXOffset.value);
+						settings.guideLinesWeight.value = Mathf.Abs(EditorGUILayout.FloatField("Guide Lines Weight", settings.guideLinesWeight.value));
 						using (new GUILayout.VerticalScope())
 						{
 							Foldout(new GUIContent("Hidden Types", "Hover over an icon to see its type name.\nWrite the type name here to hide the icon from the hierarchy view."), ref hiddenIconsFoldout);
@@ -359,7 +360,7 @@ namespace DreadScripts.HierarchyPlus
 		        {
 			        int extraWidth = hasChildren ? 0 : 12;
 
-			        void Line(Vector3 start, Vector3 end) => Handles.DrawAAPolyLine(1, 2, start, end);
+			        void Line(Vector3 start, Vector3 end) => Handles.DrawAAPolyLine(settings.guideLinesWeight, 2, start, end);
 
 			        Handles.color = settings.guideLinesColor;
 
@@ -801,7 +802,7 @@ namespace DreadScripts.HierarchyPlus
 
         private static void InitializeAll()
         {
-            iconCache.Clear();
+	        iconCache.Clear();
             InitializeIconFolderPath();
             InitializeCustomIcons();
             InitializeSpecialIcons();
