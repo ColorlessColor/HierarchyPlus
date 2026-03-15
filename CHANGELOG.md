@@ -1,3 +1,7 @@
+(v1.4.0)
+--------
+- - [Feature] Added weight setting for guide lines.
+
 (v1.3.3)
 --------
 - [Fix] If the GUI is drawn before initializing the icon, then draw a placeholder.
